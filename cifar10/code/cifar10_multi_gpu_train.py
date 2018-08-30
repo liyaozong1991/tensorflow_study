@@ -24,7 +24,6 @@ tf.app.flags.DEFINE_integer('num_gpus', 5,
 tf.app.flags.DEFINE_boolean('log_device_placement', False,
                             """Whether to log device placement.""")
 
-
 def tower_loss(scope):
     """Calculate the total loss on a single tower running the CIFAR model.
 
