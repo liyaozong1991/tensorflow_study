@@ -98,7 +98,7 @@ def plot_history(history):
     plt.plot(history.epoch, np.array(history.history['mean_absolute_error']),
              label='Train Loss')
     plt.plot(history.epoch, np.array(history.history['val_mean_absolute_error']),
-             label = 'Val loss')
+             label='Val loss')
     plt.legend()
     plt.ylim([0, 5])
     plt.show()
@@ -131,7 +131,7 @@ _ = plt.plot([-100, 100], [-100, 100])
 plt.show()
 
 error = test_predictions - test_labels
-plt.hist(error, bins = 50)
+plt.hist(error, bins=50)
 plt.xlabel("Prediction Error [1000$]")
 _ = plt.ylabel("Count")
 plt.show()
